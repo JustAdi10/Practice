@@ -78,7 +78,7 @@ int main()
 
 }
 
-*/
+
 
 
 #include<iostream>
@@ -117,17 +117,16 @@ int main()
 
 }
 
+*/
 
 
-
-/*
 #include <iostream>
 #include <cstdio>
 using namespace std;
 
 int main()
 
-/*int max_of_four(int a, int b, int c, int d)
+int max_of_four(int a, int b, int c, int d)
 {
 
 }
@@ -143,4 +142,3 @@ int main()
     
     return 0;
 }
-*/
