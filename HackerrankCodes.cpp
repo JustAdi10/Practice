@@ -1,3 +1,4 @@
+/*
 #include<iostream>
 using namespace std;
 
@@ -16,11 +17,11 @@ int main()
     {
         if(a,b==1)
         {
-            cout<<"onen"<<endl;
+            cout<<"one"<<endl;
         }
 
     
-        /*else if(n==2)
+        else if(n==2)
         {
         cout<<"two"<<endl;
        
@@ -61,10 +62,10 @@ int main()
     
         else if(n==9){
         cout<<"nine"<<endl;
-     }*/
+     }
     }
 
-    /*int s=n%2;
+    int s=n%2;
 
     if(s==0)
     {
@@ -74,5 +75,41 @@ int main()
     {
         cout<<"Odd"<<endl;
     }
+
+}
 */
+
+
+
+#include<iostream>
+using namespace std;
+
+int main()
+void loop(string arr[],int n)
+{
+    for(int i=0;i<10;i++)
+    {
+        if(i==n)
+        {
+            cout<<arr[i]<<" ";
+
+        }
+    
+    }
+
+}
+
+int main()
+{
+    int a,b;
+    string arr[10]={"zero","one","two","three","four","five","six","seven","eight","nine"};
+
+    cout<<""<<endl;
+    cin>>a;
+
+    cout<<""<<endl;
+    cin>>b;
+
+    
+
 }
