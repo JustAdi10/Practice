@@ -61,14 +61,17 @@ int main()
     if(a>0)
     {
         for(int i=a;i<=b;i++)
-     {
+    {
+        cout<<i<<endl;
         if(i<10)
         {
             cout<<arr[i-1]<<endl;
         }
-        else if(i>9,i<=b)
+
+
+        else
         {
-            for(int j=i;j<=b;j++)
+            for(int j=i;j<b;j++)
             {
                 int p;
                 p=j%2;
@@ -84,6 +87,6 @@ int main()
                 
             }
         }
-     }
+    }
     }
 }
