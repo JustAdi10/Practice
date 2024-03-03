@@ -77,21 +77,21 @@ int main()
     }
 
 }
-*/
 
+*/
 
 
 #include<iostream>
 using namespace std;
 
-int main()
+
 void loop(string arr[],int n)
 {
     for(int i=0;i<10;i++)
     {
         if(i==n)
         {
-            cout<<arr[i]<<" ";
+            cout<<arr[i]<<" "<<endl;
 
         }
     
@@ -110,6 +110,37 @@ int main()
     cout<<""<<endl;
     cin>>b;
 
+    loop(arr,a);
+    loop(arr,b);
+
     
 
 }
+
+
+
+
+/*
+#include <iostream>
+#include <cstdio>
+using namespace std;
+
+int main()
+
+/*int max_of_four(int a, int b, int c, int d)
+{
+
+}
+
+int main()
+{
+    int a,b,c,d;
+    cout<<""<<""<<""<<"";
+    cin>>a>>b>>c>>d;
+
+
+    
+    
+    return 0;
+}
+*/
