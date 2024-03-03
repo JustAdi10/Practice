@@ -58,9 +58,10 @@ int main()
     cout<<""<<"";
     cin>>a>>b;
 
-
-    for(int i=a;i<=b;i++)
+    if(a>0)
     {
+        for(int i=a;i<=b;i++)
+     {
         if(i<10)
         {
             cout<<arr[i-1]<<endl;
@@ -83,5 +84,6 @@ int main()
                 
             }
         }
+     }
     }
 }
