@@ -11,8 +11,3 @@ int main()
     cout<<maxi<<endl;
     return 0;
 }
-
-
-
-
-
