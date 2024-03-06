@@ -1,6 +1,5 @@
 #include<iostream>
 #include<string>
-#include<bits/stdc++.h>
 using namespace std;
 
 int main()
@@ -17,11 +16,27 @@ int main()
 
     char r=a[0];
     char s=b[0];
-    char x=replace(a,r,s);
-    char y=replace(b,s,r);
+
+    for(int i=0;i<=p;i++)
+    {
+        if(i==0)
+        {
+            a[i]=s;
+        }
+    }
+
+    for(int i=0;i<=p;i++)
+    {
+        if(i==0)
+        {
+            b[i]=r;
+        }
+    }
+
+
 
     cout<<p<<" "<<q<<endl;
     cout<<c<<endl;
-    cout<<x<<" "<<y;
+    cout<<a<<" "<<b;
 
 }
