@@ -7,10 +7,5 @@ int main()
     int arr[n];
 
     cin>>n;
-
-    for(i=0;i<=n;i++)
-    {
-        int k;
-        scanf("%d",&arr[i]);
-    }
+    
 }
