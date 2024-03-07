@@ -1,25 +1,30 @@
-/*get n elements for primary array
-get elements of the arr inside the p-arr
+/*
+get the number of arrays and the number of queries
 
+get the number of elements of the first array and the elements of the first array
+get the number of elements of the second array and the elements of the second array
 
+get the first query
+get the second query
 
-
-
-make arr with n elements
-add primary-arr elements which are arr
-
-use linked lists-?*/
-
-
+*/
 
 #include<iostream>
 using namespace std;
 
 int main()
 {
-    int n;
-    int arr[n];
+    int narray,nquery;
+    cin>>narray>>" ">>nquery;
 
-    cin>>n;
+    for(i=0;i<=narray;i++)
+    {
+        int x[i];
+        
+    }
     
+
+
+
+
 }
