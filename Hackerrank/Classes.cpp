@@ -56,16 +56,22 @@ int main()
     A.i_lastname();
     A.i_standard();
 
-    int p,s;
-    string q,r;
-    p=A.o_age();
-    q=A.o_firstname();
-    r=A.o_lastname();
-    s=A.o_standard();
-
-
-    cout<<p<<endl<<r<<", "<<q<<endl<<s<<endl;
+    A.o_age();
     cout<<endl;
-    cout<<p<<","<<q<<","<<r<<","<<s<<endl;
-        
+    A.o_lastname();
+    cout<<", ";
+    A.o_firstname();
+    cout<<endl;
+    A.o_standard();
+    cout<<endl;
+    cout<<endl;
+
+
+    A.o_age();
+    cout<<",";
+    A.o_firstname();
+    cout<<",";
+    A.o_lastname();
+    cout<<",";
+    A.o_standard();
 }
