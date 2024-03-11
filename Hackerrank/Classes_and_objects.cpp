@@ -16,7 +16,11 @@ class student
 
     int calculateTotalScore()
     {
-        
+        int totsco;
+        for(i=0;i<=4;i++)
+        {
+            totsco=
+        }
     }
 
 };

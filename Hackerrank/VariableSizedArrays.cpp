@@ -33,4 +33,4 @@ int main()
 
     cout<<arr[0][1];
 
-}
+}   
