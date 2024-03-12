@@ -19,7 +19,7 @@ class student
         int totsco;
         for(i=0;i<=4;i++)
         {
-            totsco=
+            totsco=scores[i]+scores[i+1];
         }
     }
 
