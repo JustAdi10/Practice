@@ -11,3 +11,5 @@ class Solution
         cin>>arr[i];
     }
 }
+
+nvljvlihjvbi;
