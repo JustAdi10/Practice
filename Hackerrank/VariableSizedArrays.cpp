@@ -17,20 +17,8 @@ int main()
     int narr,nque;
     cin>>narr>>nque;
 
-    int arr[][];
+    int *ar[narr];
 
-    for(int i=0;i<narr;i++)
-    {
-        int nelem1;
-        cin>>nelem1;
-        for(int j=0;j<=nelem1;j++)
-        {
-            int x;
-            cin>>x;
-            arr[i][j]=x;
-        }
-    }
-
-    cout<<arr[0][1];
+    for(int i;i<=)
 
 }   
