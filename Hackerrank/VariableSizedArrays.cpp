@@ -1,24 +1,30 @@
-/*
-get the number of arrays and the number of queries
-
-get the number of elements of the first array and the elements of the first array
-get the number of elements of the second array and the elements of the second array
-
-get the first query
-get the second query
-
-*/
-
-#include<iostream>
+    #include<iostream>
 using namespace std;
 
 int main()
 {
-    int narr,nque;
-    cin>>narr>>nque;
+    int x,y,s=0;
+    cin>>x>>y;
 
-    int *ar[narr];
+    int *arr[x];
 
-    for(int i;i<=)
+    while(x--)
+    {
+        int num;
+        cin>>num;
+        arr[s]=new int[num];
 
+        for(int i=0;i<num;i++)
+        {
+            cin>>arr[s][i];
+        }
+        s++;
+    }
+
+    while(y--)
+    {
+        int a,b;
+        cin>>a>>b;
+        cout<<arr[a][b]<<endl;
+    }
 }   
