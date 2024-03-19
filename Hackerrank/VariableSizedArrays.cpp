@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    int x,y,s=0;
+    int x,y,s;
     cin>>x>>y;
 
     int *arr[x];
@@ -14,7 +14,7 @@ int main()
         cin>>num;
         arr[s]=new int[num];
 
-        for(int i=0;i<num;i++)
+        for(int i=0;i<=num;i++)
         {
             cin>>arr[s][i];
         }
