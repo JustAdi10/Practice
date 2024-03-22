@@ -12,12 +12,22 @@ int main()
     //adding values to 1
     vector1.push_back(10);
     vector1.push_back(20);
-    cout<<vector1.at(0)<<" "<<vector1.at(1)<<" "<<vector1.size()<<endl;
+
+    for(int i=0;i<vector2.size();i++)
+    {
+        cout<<vector2.at(i)<<" ";
+    }
+    cout<<endl;
 
     //adding values to 2
     vector2.push_back(100);
     vector2.push_back(200);
-    cout<<vector2.at(0)<<" "<<vector2.at(1)<<" "<<vector2.size()<<endl;
+
+    for(int i=0;i<vector2.size();i++)
+    {
+        cout<<vector2.at(i)<<" ";
+    }
+    cout<<endl;
 
     //2d vect
     vector <vector <int>> vector_2d{};
@@ -45,6 +55,10 @@ int main()
         }
     }
 
-    cout<<vector1.at(0)<<" "<<vector1.at(1)<<endl;
+    for(int i=0;i<vector2.size();i++)
+    {
+        cout<<vector2.at(i)<<" ";
+    }
+    cout<<endl;
 
 }
