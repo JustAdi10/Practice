@@ -40,7 +40,6 @@ int main()
 
 
 
-
 int op1()
 {
     for(int i=0;i<vector1.size();i++)
