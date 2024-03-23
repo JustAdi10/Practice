@@ -1,33 +1,25 @@
-#include<iostream>
-#include<vector>
+    #include<iostream>
+    #include<vector>
+    #include<algorithm>
 
-using namespace std;
+    using namespace std;
 
-int main()
-{
-    int n;
-    cin>>n;
-
-    vector <int> vect(n);
-
-    for(int i=0;i<n;i++)
+    int main()
     {
-        cin>>vect.at(i);
-    }
+        int n;
+        cin>>n;
 
-    for(int i=0;i<n;i++)
-    {
-        for(int j=0;j<n-1;j++)
+        vector <int> vect(n);
+
+        for(int i=0;i<n;i++)
         {
-            if(vect.at(j)>vect.at(j+1))
-            {
-                swap(vect.at(j),vect.at(j+1));
-            }
+            cin>>vect.at(i);
+        }
+
+        sort(vect.begin(), vect.end());
+
+        for(int i=0;i<n;i++)
+        {
+            cout<<vect.at(i)<<" ";
         }
     }
-
-    for(int i=0;i<n;i++)
-    {
-        cout<<vect.at(i)<<" ";
-    }
-}
