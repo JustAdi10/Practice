@@ -17,8 +17,6 @@ vector<string> split(const string &);
  *  4. INTEGER qy
  */
 
-Random bs
-
 vector<int> findPoint(int px, int py, int qx, int qy) {
 
 }
