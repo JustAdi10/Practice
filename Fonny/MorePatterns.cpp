@@ -22,7 +22,6 @@ int main()
 
     cout<<endl;
 
-    //int stlineop(int symb, int dim);
 
     for(int i=0;i<dim;i++)
     {
@@ -43,7 +42,6 @@ int main()
         cout<<symb<<endl;
     }
 
-    //int stlineop(int symb, int dim);
     for(int i=0;i<dim;i++)
     {
         cout<<symb<<" ";
