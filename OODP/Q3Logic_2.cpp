@@ -19,6 +19,30 @@ int main()
 {
     dimension rect;
 
-    rect.getdim(int m, int n, int a);
+    try
+    {
+        int m,n,a;
+        rect.getdim();
+
+        if(m>0 && n>0 && a>0)
+        {
+            int rectar,tilear,count;
+
+            rectar=n*m;
+            tilear=a*a;
+
+            count=rectar/tilear;
+
+            cout<<count;
+        }
+
+        else 
+        throw 0;
+    }
+
+    catch(int dimension)
+    {
+        cout<<"Invalid"<<endl;
+    }
 
 }
