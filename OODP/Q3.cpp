@@ -11,7 +11,7 @@ int main()
 
         if(n>0 & m>0 & a>0)
         {
-        cout<<((n+a-1)/a)*((m+a-1)/a);
+            cout<<((n+a-1)/a)*((m+a-1)/a);
         }
 
         else
