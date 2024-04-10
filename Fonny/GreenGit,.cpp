@@ -2,7 +2,7 @@
 using namespace std;
 
 int main(){
-    cout<<"hahahada"<<endl;
+    cout<<"more useless commits"<<endl;
 
     return 0;
 }
