@@ -1,8 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    cout<<"more useless commits"<<endl;
+class idek
+{
+    private:
+        int a,b;
 
+    public:
+        int sax(int a, int b)
+        {
+            int random;
+            random = (a + b - a*b);
+            cout<<random;
+
+            return random;
+        }
+};
+
+int main()
+{
+    cout<<"Hello World! "<<endl;
     return 0;
 }
