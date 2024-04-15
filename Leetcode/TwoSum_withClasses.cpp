@@ -6,7 +6,7 @@ class Solution
 {
     public:
 
-    vector<int> twoSum(int vectlen, vector<int>& nums, int target) 
+    vector<int> twoSum(vector<int>& nums, int target)
     {
         int vectlen;
         cin>>vectlen;
@@ -41,7 +41,7 @@ int main()
     int vectlen;
     cin>>vectlen;
 
-    
+
 
     
 
