@@ -11,7 +11,7 @@ class Solution
         int vectlen;
         cin>>vectlen;
 
-        vector <int> nums(vectlen);
+        vector <int> nums{};
 
         for(int i=0;i<vectlen;i++)
         {
