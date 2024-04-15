@@ -30,6 +30,11 @@ int main()
             cout<<"The index required to reach the target is: ";
             cout<<"["<<i<<","<<(i+1)<<"]"<<endl;
         }
+
+        else
+        {
+            return NULL;
+        }
     }
 
     return 0;
