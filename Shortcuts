@@ -1,1 +1,10 @@
-ctrl + /    --> makes all selected lines comments
+g++ *filename*     .\a.exe      Manually run program from teminal
+
+ctrl + /    --> makes all selected lines comments 
+                            or
+                makes the line youre on a comment withought selection
+                
+main + enter  --> cpp code snippet for main function
+ctrl + click  --> gives info about the header file etc
+alt + shift   --> (alt + shift) then use mouse to drag down to make multiple cursors
+alt + arrow keys    --> L and R arrow switches tabs in VS Code U and D arrow moves the line up or down
