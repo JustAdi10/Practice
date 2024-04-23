@@ -1,4 +1,7 @@
 #include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <sstream>
 
 using namespace std;
 
@@ -15,9 +18,12 @@ vector<string> split(const string &);
  *  2. INTEGER area
  */
 
-int lowestTriangle(int trianglebase, int area) {
-    
+int lowestTriangle(int trianglebase, int area)
+{
+    int min_height;
+    min_height=(2*area)/trianglebase;
 
+    return min_height;
 }
 
 int main()
