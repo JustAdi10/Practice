@@ -5,6 +5,7 @@ ctrl + /    --> makes all selected lines comments
                 makes the line youre on a comment withought selection
                 
 main + enter  --> cpp code snippet for main function
-ctrl + click  --> gives info about the header file etc
+ctrl + click(on header file)  --> gives info about the header file etc
 alt + shift   --> (alt + shift) then use mouse to drag down to make multiple cursors
 alt + arrow keys    --> L and R arrow switches tabs in VS Code U and D arrow moves the line up or down
+alt + click -->multicursor
