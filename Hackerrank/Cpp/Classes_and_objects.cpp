@@ -1,58 +1,72 @@
-#include<iostream>
-#include<vector>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+#include <cassert>
 using namespace std;
 
-class Student
-{
+// Write your Student class here
+class Student{
+
     public:
-        int calculateTotalScore(int n)
-        {
-            int arr[n][5];
-            for(int i=0;i<n;i++)
+        void input(){
+
+            vector <int> scores;
+
+            for(int i=0;i<5;i++)
             {
-                for(int j=0;j<5;j++)
-                {
-                    cin>>arr[i][j];
-                }
+                cin>>scores.at(i);
             }
+
+
+        }
+
+        int  calculateTotalScore (){
 
             int sum;
-            vector <int> sumf;
+            vector <int> scores;
 
-            for(int i=0;i<n;i++)
+            for (int i=0; i<5; i++)
             {
-                sum =0;
-                for(int j=0;j<5;j++)
-                {
-                    sum = sum +arr[i][j];
-                }
-
-                sumf.push_back(sum);
                 
-            }
-
-            int count;
-            for(int i=0;i<=n;i++)
-            {
-                if(sumf.at(0)<sumf.at(i))
+                if(i==0)
                 {
-                    count++;
+                    sum = scores.at(i);
+                }
+
+                else{
+                    sum = sum + scores.at(i);
                 }
             }
-            cout<<count;
 
-
-            return count;
+            return sum;
         }
 };
 
-int main()
-{
-    Student kristen;
+int main() {
+    int n; // number of students
+    cin >> n;
+    Student *s = new Student[n]; // an array of n students
+    
+    for(int i = 0; i < n; i++){
+        s[i].input();
+    }
 
-    int n;
-    cin>>n;
-    kristen.calculateTotalScore(n);
+    // calculate kristen's score
+    int kristen_score = s[0].calculateTotalScore();
 
+    // determine how many students scored higher than kristen
+    int count = 0; 
+    for(int i = 1; i < n; i++){
+        int total = s[i].calculateTotalScore();
+        if(total > kristen_score){
+            count++;
+        }
+    }
+
+    // print result
+    cout << count;
+    
     return 0;
 }

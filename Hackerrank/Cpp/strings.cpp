@@ -1,42 +1,32 @@
 #include<iostream>
-#include<string>
+#include<sstream>
+#include<vector>
 using namespace std;
 
 int main()
 {
-    string a,b,c;
-    int p,q;
-
-    cin>>a>>b;
-
-    p=a.size();
-    q=b.size();
-
-    c=a+b;
-
-    char r=a[0];
-    char s=b[0];
-
-    for(int i=0;i<=p;i++)
+    vector <int> inpvect ();
+    for(int i=0 ; i<3 ; i++)
     {
-        if(i==0)
-        {
-            a[i]=s;
-        }
+        cin>>inpvect.at(i);
     }
 
-    for(int i=0;i<=p;i++)
+    int a = inpvect.at(0);
+    int b = inpvect.at(1);
+    int c = inpvect.at(2);
+
+
+    stringstream ss;
+    for(int i=0; i<3; i++)
     {
-        if(i==0)
-        {
-            b[i]=r;
-        }
+        ss<<inpvect.at(i)5;
     }
+    // ss<<a<<b<<c;
 
+    string sinput;
+    ss>>sinput;
 
+    cout<<sinput<<endl;
 
-    cout<<p<<" "<<q<<endl;
-    cout<<c<<endl;
-    cout<<a<<" "<<b;
-
+    return 0;
 }
