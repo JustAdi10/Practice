@@ -2,107 +2,48 @@
 #include<vector>
 using namespace std;
 
-class Student
-{
+class Student{
+
     public:
+        void input(){
 
-        int input(int n)
-        {
-            int arr[n][5];
-            for(int i=0;i<n;i++)
+            vector <int> scores;
+
+            for(int i=0;i<5;i++)
             {
-                for(int j=0;j<5;j++)
+                cin>>scores.at(i);
+            }
+
+
+        }
+
+        int  calculateTotalScore (){
+
+            int sum;
+            vector <int> scores;
+
+            for (int i=0; i<5; i++)
+            {
+                
+                if(i==0)
                 {
-                    cin>>arr[i][j];
+                    sum = scores.at(i);
+                }
+
+                else{
+                    sum = sum + scores.at(i);
                 }
             }
 
-            return arr[n][5];
+            return sum;
         }
+};
 
-        int calculateTotalScore(int n,int arr[n][5])
-        {
-            int n;
-            int arr[n][5];
-            int sum =0;
-            vector <int> sumf;
-            
-            for(int i=0;i<n;i++)
-            {
-                for(int j=0;j<5;j++)
-                {
-                    sum = sum +arr[i][j];
-                }
-
-                sumf.at(i)=sum;
-                sum =0;
-            }
-
-            return sumf;
-        }
-}
-
-int main() {
-    int n; // number of students
-    cin >> n;
-    Student *s = new Student[n]; // an array of n students
+int main()
+{
+    int n;
+    cin>>n;
     
-    for(int i = 0; i < n; i++){
-        s[i].input(n);
-    }
-
-    // calculate kristen's score
-    int kristen_score = s[0].calculateTotalScore();
-
-    // determine how many students scored higher than kristen
-    int count = 0; 
-    for(int i = 1; i < n; i++){
-        int total = s[i].calculateTotalScore();
-        if(total > kristen_score){
-            count++;
-        }
-    }
-
-    // print result
-    cout << count;
-    
+     
     return 0;
 }
-
-
-// #include <cmath>
-// #include <cstdio>
-// #include <vector>
-// #include <iostream>
-// #include <algorithm>
-// #include <cassert>
-// using namespace std;
-
-// // Write your Student class here
-
-// int main() {
-//     int n; // number of students
-//     cin >> n;
-//     Student *s = new Student[n]; // an array of n students
-    
-//     for(int i = 0; i < n; i++){
-//         s[i].input();
-//     }
-
-//     // calculate kristen's score
-//     int kristen_score = s[0].calculateTotalScore();
-
-//     // determine how many students scored higher than kristen
-//     int count = 0; 
-//     for(int i = 1; i < n; i++){
-//         int total = s[i].calculateTotalScore();
-//         if(total > kristen_score){
-//             count++;
-//         }
-//     }
-
-//     // print result
-//     cout << count;
-    
-//     return 0;
-// }
