@@ -7,39 +7,26 @@
 using namespace std;
 
 // Write your Student class here
-class Student{
-
+class Student
+{
     public:
-        void input(){
-
-            vector <int> scores;
-
+    
+        int scores[5];
+        int sum=0;
+            
+        void input()
+        {
+            
             for(int i=0;i<5;i++)
             {
-                cin>>scores.at(i);
+                cin>>scores[i];
+
+                sum = sum + scores[i];
             }
-
-
         }
 
-        int  calculateTotalScore (){
-
-            int sum;
-            vector <int> scores;
-
-            for (int i=0; i<5; i++)
-            {
-                
-                if(i==0)
-                {
-                    sum = scores.at(i);
-                }
-
-                else{
-                    sum = sum + scores.at(i);
-                }
-            }
-
+        int calculateTotalScore()
+        {
             return sum;
         }
 };
