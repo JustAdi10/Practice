@@ -10,34 +10,23 @@ using namespace std;
 class Student
 {
     public:
-        
+    
         int scores[5];
-        int sum;
-
+        int sum=0;
+            
         void input()
         {
-            int scores[5];
             
             for(int i=0;i<5;i++)
             {
                 cin>>scores[i];
+
+                sum = sum + scores[i];
             }
         }
 
         int calculateTotalScore()
         {
-            for(int i=0;i<5;i++)
-            {
-                if(i==0)
-                {
-                    sum = scores[i];
-                }
-
-                else{
-                    sum = sum + scores[i];
-                }
-            }
-
             return sum;
         }
 };
