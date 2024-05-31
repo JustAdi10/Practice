@@ -5,7 +5,19 @@
 using namespace std;
 
 /* Define the exception here */
+class BadLengthException{
+	public:
+		int n;
+		char what(){
+			return n;
+		}
 
+		void BadLengthExcpetion(int n){
+			catch(int n){
+				cout<<"Too Short: "<<n;
+			}
+		}
+};
 
 bool checkUsername(string username) {
 	bool isValid = true;
@@ -34,7 +46,7 @@ int main() {
 				cout << "Invalid" << '\n';
 			}
 		} catch (BadLengthException e) {
-			cout << "Too short: " << e.what() << '\n';
+			cout << "Too short: "<< e.what() << '\n';
 		}
 	}
 	return 0;

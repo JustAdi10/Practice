@@ -1,29 +1,46 @@
 #include<bits/stdc++.h>
-
+#include<stdbool.h>
+#include<iostream>
 using namespace std;
 
-class box
+class Box
 {
-    private:
-        int l=0,b=0,h=0;
+	private:
+		int l,b,h;
 
-    public:
-        Box(){
+	public:
 
-        }
-
-        Box(int l, int b, int h){
-
-
-        }
-
-        Box(Box)
+		Box(){
+			l=0;
+			b=0;
+			h=0;
+		}
 
 
+		Box(int l, int b, int h){
+			l=l;
+			b=b;
+			h=h;
+		}
 
-        
+		int getLength(){
+			return l;
+		}
 
-}
+		int getBreadth(){
+			return b;
+		}
+	
+		int getHeight(){
+			return h;
+		}
+		
+		long long CalculateVolume(){
+			int volume = l*b*h;
+			return volume;
+		}
+
+};
 //Implement the class Box  
 //l,b,h are integers representing the dimensions of the box
 

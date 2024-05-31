@@ -5,9 +5,8 @@
 #include <algorithm>
 using namespace std;
 
-int main()
-{
-    int no_lines,no_queries;
-    
 
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
 }
