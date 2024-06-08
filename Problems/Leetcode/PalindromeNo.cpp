@@ -1,16 +1,16 @@
 #include<iostream>
-#include<cmath>
+#include<string>
+#include<sstream>
 #include<vector>
 
-using namespace std;
-class Solution
+class Solution 
 {
     public:
-        bool isPalindrome(int x)
+        bool isPalindrome(int x) 
         {
-            int x;
-            cin>>x;
+            int number;
+            cin>>number;
 
-                    
+            int 
         }
-}
+};
